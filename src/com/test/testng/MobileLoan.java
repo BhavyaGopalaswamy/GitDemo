@@ -7,6 +7,9 @@ public class MobileLoan {
 	@Test
 	public void mobileTC1() {
 		System.out.println("Mobile test case1");
+		System.out.println("Mobile test case1a");
+		System.out.println("Mobile test case1b");
+		System.out.println("Mobile test case1c");
 	}
 	
 	@Test
