@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.test.testng.Listener"></listener>
+	</listeners>
+	<test name="Personal Loan">
+		<classes>
+			<class name="com.test.testng.Example1" />
+			<class name="com.test.testng.Example2" />
+		</classes>
+	</test>
+
+	<test name="Car Loan">
+		<classes>
+			<class name="com.test.testng.CarLoan">
+				<methods>
+					<!-- In car-loan test case carLoanWebLogin() will not be executed. Its 
+						excluded from testcase execution -->
+					<exclude name="carLoanWebLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Home Loan">
+		<classes>
+			<class name="com.test.testng.HomeLoanLogin">
+				<methods>
+					<!-- In home-loan test case only homeLoanAPILogin() will be executed. 
+						Its included for testcase execution -->
+					<include name="homeLoanAPILogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Mobile Loan">
+		<classes>
+			<class name="com.test.testng.MobileLoan">
+				<methods>
+					<include name="mobile.*"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 

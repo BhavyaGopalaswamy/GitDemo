@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- Setting the parameters at a global level using parameters tag -->
+	<parameters name="URL" value="clickacademy.com"></parameters>
+	
+	<test name="Parameterization">
+	<!-- Setting the parameters at a class level using parameters tag. these variables are applicable only to this test class 
+	Also sending multiple parameters-->
+	<parameters name="URL" value="parameter1.com"></parameters>
+	<parameters name="accesskey" value="12345"></parameters>
+		<classes>
+		<class name="com.test.testng.Parameterization1"/>
+		</classes>
+	</test>
+	
+	
+	<test name="Parameterization2">
+	<!-- Setting the parameters at a class level using parameters tag. these variables are applicable only to this test class -->
+	<parameters name="URL" value="parameter2.com"></parameters>
+		<classes>
+		<class name="com.test.testng.Parameterization2"/>
+		</classes>
+	</test>
+</suite> 
