@@ -15,11 +15,16 @@ public class MobileLoan {
 	@Test
 	public void mobileTC2() {
 		System.out.println("Mobile test case2");
+		System.out.println("Mobile test case2a");
+		System.out.println("Mobile test case2b");
+		
 	}
 	
 	@Test
 	public void mobileTC3() {
 		System.out.println("Mobile test case3");
+		System.out.println("Mobile test case3a");
+		System.out.println("Mobile test case3b");
 	}
 
 }

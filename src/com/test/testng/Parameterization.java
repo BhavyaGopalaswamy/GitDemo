@@ -24,10 +24,14 @@ public class Parameterization {
 	@Test
 	public void tc3() {
 		System.out.println("Executing tc 3");
+		System.out.println("Executing tc 3 A");
+		System.out.println("Executing tc 3 B");
 	}
 	
 	@Test
 	public void tc4() {
 		System.out.println("Executing tc 4");
+		System.out.println("Executing tc 4 A");
+		System.out.println("Executing tc 4 B");
 	}
 }
